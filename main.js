@@ -11,13 +11,6 @@ app.listen(PORT, function() {
 	console.log("Listening on port " + PORT);
 });
 
-function handler(req, res) {
-	
-}
+function handler(req, res) {}
 
-io.on('connection', function (socket) {
-  socket.emit('news', { hello: 'world' });
-  socket.on('my other event', function (data) {
-    console.log(data);
-  });
-});
+require('./io')(io);
