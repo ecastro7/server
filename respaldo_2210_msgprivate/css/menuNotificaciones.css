@@ -1,0 +1,93 @@
+body {
+	background-color: #90E5A3;
+}
+
+.jumbotron {
+	background-color: #fcf9f9 !important;
+}
+
+.glyphicon-bell {
+	font-size: 18px;
+}
+
+#notification_li {
+	position: relative
+}
+
+#notificationContainer {
+	background-color: #fff;
+	border: 1px solid rgba(100, 100, 100, .4);
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	overflow: visible;
+	position: absolute;
+	top: 64px;
+	margin-left: -173px;
+	width: 400px;
+	z-index: 1;
+	display: none;
+}
+
+#notificationContainer:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	color: transparent;
+	border: 10px solid black;
+	border-color: transparent transparent white;
+	margin-top: -20px;
+	margin-left: 188px;
+}
+
+#notificationTitle {
+	z-index: 1000;
+	font-weight: bold;
+	padding: 8px;
+	font-size: 13px;
+	background-color: #ffffff;
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+}
+
+#notificationsBody {
+	padding: 33px 0px 0px 0px !important;
+	min-height: 300px;
+}
+
+#notificationFooter {
+	background-color: #e9eaed;
+	text-align: center;
+	font-weight: bold;
+	padding: 8px;
+	font-size: 12px;
+	border-top: 1px solid #dddddd;
+}
+
+.notification_count {
+	background: #cc0000;
+	margin-left: 27px;
+	position: absolute;
+	margin-top: 9px;
+	min-width: 10px;
+	padding: 2px 4px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 5px 0;
+	z-index: 1;
+}
+
+#contenido {
+	min-height: 300px;
+	background-color: #FCF9F9;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	padding: 10px;
+}
